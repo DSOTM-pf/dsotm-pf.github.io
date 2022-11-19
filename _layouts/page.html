@@ -36,10 +36,18 @@ layout: default
 
   <!-- panel -->
   <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
-    <div id="d-help">
-      <img id="help-img" class="d-help-img" alt="help" src="/assets/images/help.png">
+
+    <div class="access">
+      {% include update-list.html %}
+      {% include trending-tags.html %}
     </div>
+
+    {% for _include in layout.panel_includes %}
+      {% assign _include_path = _include | append: '.html' %}
+      {% include {{ _include_path }} %}
+    {% endfor %}
   </div>
+
 </div>
 
 <!-- tail -->
@@ -53,5 +61,3 @@ layout: default
   </div>
 </div>
 {% endif %}
-
-<script src="/assets/js/help.js"></script>
