@@ -11,8 +11,9 @@ order: 3
 > PLC Issues Identified in 309 Real Pipelines
 {: .prompt-info }
 [**Click for more details about PLC issues repored to ML pipelines.**](http://127.0.0.1:4000/posts/Empirical-Findings-ML-Pipelines/)
-
-
+<div>
+<img src="/assets/images/Pipeline-Bug.gif" alt="avatar">
+</div>
 <div id="d-help-win" class="d-help-win" >
     <div id="win-title">Help
         <span id="d-help-colse" clss="close_2" class="close_2">
